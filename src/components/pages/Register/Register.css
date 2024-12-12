@@ -1,0 +1,49 @@
+/* Ensure the html and body take the full viewport height and width */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Ensure the container takes full screen width and height */
+  .background-container {
+    height: 100vh;               /* Full viewport height */
+    width: 100vw;                /* Full viewport width */
+    background-image: url('/background.png');  /* Set background image */
+    background-size: cover;     /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the content (box containing the form) */
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Paper to hold the form with shadow */
+  .form-paper {
+    padding: 40px;
+    max-width: 500px;  /* Max width for form */
+    width: 100%;  /* Ensure full width */
+    background-color: rgba(255, 255, 255, 0.8);  /* Light background for the paper */
+    border-radius: 10px;
+  }
+  
+  /* Style for the header text */
+  .header-text {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  /* Style for form fields */
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
